@@ -5,8 +5,6 @@ data "archive_file" "zip" {
   output_path = "${path.module}/${var.name}.zip"
 }
 # Lambda
-
-
 resource "aws_lambda_function" "lambda" {
   function_name    = var.name
   filename         = "${data.archive_file.zip.output_path}"
@@ -18,7 +16,6 @@ resource "aws_lambda_function" "lambda" {
     create_before_destroy = true
   }
 }
-
 # IAM
 resource "aws_iam_role" "role" {
   name = "myrole_${var.name}"
