@@ -3,6 +3,6 @@ terraform {
     bucket         = "wahaj-bucket"
     key            = "terraform.tfstate"
     region         = "us-east-2"
-    dynamodb_table = "wahaj-lock"
+    dynamodb_table = "wahaj-k8"
   }
 }
