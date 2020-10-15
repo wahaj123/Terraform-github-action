@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "wahaj-bucket"
+    bucket         = "wahaj-githubaction"
     key            = "terraform.tfstate"
     region         = "us-east-2"
-    dynamodb_table = "wahaj-k8"
+    dynamodb_table = "wahaj-lock"
   }
 }
