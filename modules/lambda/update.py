@@ -17,7 +17,7 @@ def lambda_handler(event, context):
     update_expression_values = []
     expression_attribute_values = {}
     employee_id = event['employee_id']
-    
+    pirnt('hello from wahaj')
     if 'employee_id' in event:
         employee_id = event['employee_id']
     else:
