@@ -7,7 +7,7 @@ table = dynamodb.Table('Employee-wahaj')
 
 def lambda_handler(event, context):
     employee_id = event['employee_id']
-    pirnt('hello from wahaj')
+    print('hello from wahaj')
     try:    
         response = table.get_item(
             Key={

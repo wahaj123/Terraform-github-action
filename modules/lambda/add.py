@@ -27,7 +27,7 @@ def lambda_handler(event, context):
         }
     except:
         print('Closing lambda function')
-        pirnt('hello from wahaj')
+        print('hello from wahaj')
         return {
                 'statusCode': 400,
                 'body': json.dumps('Error saving the employee'),
